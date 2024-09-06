@@ -1,9 +1,9 @@
+import 'package:authentications_flutter/otp_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/services.dart';
 import 'package:authentications_flutter/icons/icons.dart';
-
 
 class ForgotPasswordPage extends StatelessWidget {
   const ForgotPasswordPage({super.key});
@@ -32,14 +32,16 @@ class ForgotPasswordPage extends StatelessWidget {
           child: Column(
             children: [
               SvgPicture.string(forgotImage),
-              const SizedBox(height: 72,),
+              const SizedBox(
+                height: 72,
+              ),
               const Text(
                 'Forgot Password?',
-                style: TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold
-                ),),
-              const SizedBox(height: 12,),
+                style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 12,
+              ),
               const Text(
                 textAlign: TextAlign.center,
                 'Don\'t worry! it happens. Please enter phone\n number associated with your account',
@@ -49,12 +51,15 @@ class ForgotPasswordPage extends StatelessWidget {
                   color: Color(0xff696969),
                 ),
               ),
-              const SizedBox(height: 41,),
+              const SizedBox(
+                height: 41,
+              ),
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
                   'Enter your phone number',
-                  style: TextStyle(fontSize: 16.43, fontWeight: FontWeight.normal),
+                  style:
+                      TextStyle(fontSize: 16.43, fontWeight: FontWeight.normal),
                 ),
               ),
               const SizedBox(
@@ -64,8 +69,12 @@ class ForgotPasswordPage extends StatelessWidget {
                 keyboardType: TextInputType.phone,
                 inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(18), borderSide: const BorderSide(color: Colors.grey)),
-                  focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(18), borderSide: const BorderSide(color: Colors.grey)),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(18),
+                      borderSide: const BorderSide(color: Colors.grey)),
+                  focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(18),
+                      borderSide: const BorderSide(color: Colors.grey)),
                   prefixIcon: const Padding(
                     padding: EdgeInsets.only(left: 30.0),
                     child: Row(
@@ -87,19 +96,24 @@ class ForgotPasswordPage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 23,),
-
-
+              const SizedBox(
+                height: 23,
+              ),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const OtpPage()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(17),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                   ),
                   child: const Text(

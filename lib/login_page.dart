@@ -135,7 +135,7 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 153, vertical: 17),
+                const EdgeInsets.symmetric(horizontal: 153, vertical: 17),
                 backgroundColor: Colors.black,
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
@@ -192,7 +192,7 @@ class _LoginPageState extends State<LoginPage> {
             OutlinedButton(
               style: OutlinedButton.styleFrom(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 68, vertical: 15),
+                  const EdgeInsets.symmetric(horizontal: 68, vertical: 15),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(17),
                   )),
@@ -217,7 +217,7 @@ class _LoginPageState extends State<LoginPage> {
             OutlinedButton(
               style: OutlinedButton.styleFrom(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 68, vertical: 15),
+                  const EdgeInsets.symmetric(horizontal: 68, vertical: 15),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(17),
                   )),
